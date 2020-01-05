@@ -1,8 +1,8 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1
 
-RUN sudo wget https://github.com/exercism/cli/releases/download/v3.0.13/exercism-3.0.13-linux-x86_64.tar.gz
-RUN sudo tar -xf exercism-3.0.13-linux-x86_64.tar.gz
-RUN sudo mkdir -p ~/bin && mv exercism ~/bin
+RUN wget https://github.com/exercism/cli/releases/download/v3.0.13/exercism-3.0.13-linux-x86_64.tar.gz
+RUN tar -xf exercism-3.0.13-linux-x86_64.tar.gz
+RUN mkdir -p ~/bin && mv exercism ~/bin
 
 USER gitpod
 
